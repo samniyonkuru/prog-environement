@@ -1,0 +1,9 @@
+# Cabal build artifacts
+dist-newstyle/
+
+# GHC artifacts
+*.hi
+*.o
+
+# flake lock file
+flake.lock

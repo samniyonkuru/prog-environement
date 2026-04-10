@@ -1,0 +1,28 @@
+cabal-version: 2.4
+name: project-test
+version: 0.1.0.0
+build-type: Simple
+
+library
+  hs-source-dirs: src
+  exposed-modules: Hello
+  build-depends: base
+  default-language: Haskell2010
+
+executable project-test
+  main-is: Main.hs
+  hs-source-dirs: app
+  build-depends:
+      base
+    , project-test
+  default-language: Haskell2010
+
+test-suite project-test-test
+  type: exitcode-stdio-1.0
+  main-is: HelloSpec.hs
+  hs-source-dirs: test
+  build-depends:
+      base
+    , project-test
+    , hspec
+  default-language: Haskell2010
