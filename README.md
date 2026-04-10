@@ -1,3 +1,4 @@
+```md
 # project-test
 
 Basic Haskell starter project with:
@@ -10,3 +11,5 @@ Basic Haskell starter project with:
 
 Enter the development shell:
 
+```bash
+nix develop
